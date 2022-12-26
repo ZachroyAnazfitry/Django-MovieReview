@@ -24,7 +24,10 @@ urlpatterns = [
     path("about/", movieViews.about, name='about'),
     path('signup/', movieViews.signup, name='signup'),
     path('news/', include('news.urls')),
-    path('movie/', include('movie.urls')),
+
+    # try ok
+    path('news/', include('news.urls')),
+    path('news/', include('news.urls')),
    
     
 
