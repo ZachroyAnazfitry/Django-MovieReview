@@ -24,10 +24,9 @@ urlpatterns = [
     path("about/", movieViews.about, name='about'),
     path('signup/', movieViews.signup, name='signup'),
     path('news/', include('news.urls')),
+    path('accounts/', include('accounts.urls')),
 
-    # try ok
-    path('news/', include('news.urls')),
-    path('news/', include('news.urls')),
+
    
     
 
