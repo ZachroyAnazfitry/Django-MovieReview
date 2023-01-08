@@ -27,6 +27,12 @@ def signupaccount(request):
             login(request, user)
             return redirect('home')
 
+        else:
+            return render(request, 'signupaccount.html',
+            {'form': UserCreationForm,
+            'error': 'Password tak sama'})
+
+
     
 
 
